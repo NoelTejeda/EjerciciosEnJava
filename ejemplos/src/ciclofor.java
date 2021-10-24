@@ -1,4 +1,5 @@
-package prueba.src;
+package ejemplos.src;
+
 public class ciclofor {
     public static void main (String [] args){
         

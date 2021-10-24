@@ -1,4 +1,4 @@
-package prueba.src;
+package ejemplos.src;
 
 import javax.swing.JOptionPane;
 
