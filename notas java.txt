@@ -1,0 +1,143 @@
+significado de J.R.E = java runtime enviroment (entorno de ejecución java), también llamado en sus inicios J.V.M= java virtual machine ( maquina virtual java)
+---------------------------------
+compilar= es pasar el código fuente al código máquina, para que este puede entenderlo y ejecutarlo.
+
+con Java como es multiplaforma al compilar genera un archivo de bytecodes con extensión .class y luego es interpretado por el JRE, para luego transformarlo en código máquina.
+
+lo que debe tener instalado cada sistema operativo para poder interpretar el código es tener instalada la JRE. y con el .class pudiera utilizarlo.
+--------------------
+JDK = (java development kit) es una herramienta de desarrollo que contiene:
+JRE, compilador java, api de java que son las clases, modulos que vienen definidas.
+
+la versiones JDK son: 6,7,8,9,10,11,12,13,14.
+la más usada es la java8
+para saber la version que tengo, se puede ver en cmd: java -version
+
+existen dos versiones:
+openJDK: gratis
+JDK-Oracle: para lanzar a producción y de paga. 
+-------------------
+Applets: son programas en java que se ejecutan en un navegador
+
+****perndiente por definir mejor este termino applet*****
+
+---------------------
+para hacer un public class { 
+    se usa el atajo class
+}
+-------------------
+public static void main (String....)
+con el atajo main
+---------------------
+system.out.println()
+se usa el atajo sysout
+-----------------------
+compilar
+ctrl + alt + n
+
+también con desde la consola, se busca la carpeta y el archivo y se ejecuta con:
+java ./ejercicio.java
+
+------------------------
+comentario de una linea: //
+comentario de varias lineas: /* estas deberian ser varias lineas */
+------------------------- 
+al declarar una variable como float: se le debe colocar la letra f al final del numero, ejemplo:
+float numeroejemplo: 3.456f;
+esto solo en los float
+--------------------------- 
+las constantes se declaran asi:
+final numero=10;
+si se quisiera cambiar más adelante arrojaria un error.ejem:
+numero=9; (error)
+------------------------------
+para poder guardar datos se usa la clase escaner (Scanner loquedesees= new Scanner(system.in); ), pero para usarla es necesario importar la libreria Scanner (java.util.Scanner)
+
+luego para indicarle donde se debe guardar:
+
+numero= loquedesees.nextInt();
+
+----------------------------
+errores:
+
+* The type java.util.Iterator cannot be resolved. It is indirectly referenced from required .class en visual studio code
+el error que me arrojaba lo resolví con 
+ctrl + shift + p
+y luego java clean.
+
+* resource leak: ...is never closed
+se soluciona cerrando con: ejemplo.close();
+-----------------------------
+
+todo programa debe estar compuesto de al menos una clase. en java existen dos tipos de clases:
+
+propias: son las que creamos nosotros, y contienen un único método (main)
+
+predefinidas: string, math, array, thread, por ejemplo.
+
+cada clase trae diferentes metodos para diferentes tareas.
+
+las API JAVA son bibliotecas donde se guardan todas las clases y que se consultan con frecuencia para algúna solucion. 
+
+---
+por defecto java tiene las librerias java.lang que contiene math,string,system,package,float, etc.
+los paquetes contiene a las librerias y estas contienen a las clases y estas a los metodos.
+
+---------------------------------------------
+Que es una api?
+
+sus siglas son "Application Programming Interface" son programas que sirven para permitnir la comunicacion entre aplicaciones como de intermediarios entre programas, ejemplo: realizar una compra en una página la api se encarga de conectar al usuario a su banco y lugo le avisa a la página que se efectuó la compra., por ejemplo el pago de paypal, muchas páginas pueden usar esa api y se evitarian tener que construir el camino para un metodo de pago.. existen diferentes tipos de api.
+
+---------------------------------------------
+
+la clase Math.sqrt (metodo sqrt)
+un buen uso que se le puede dar, es para sacar raiz cuadrada de un número ejemplo:
+
+public static void main(String[] args) {
+	double raiz=Math.sqrt(9);
+	System.out.println(raiz);
+}
+el resultado debe ser= 3.0
+para ver mejor su función se puede consultar la api de java (docs.oracle.com/java/7/docs/api/)
+-----------------------------------------------
+
+// math.sqrt(n): raiz cuadrada de un número
+
+// math.pow(base,exponente):potencia de un numero. base y exponentes son doubles
+
+// math.sin(angulo). Math.cos(angulo) Math.tan(angulo) Math.atan(angulo)
+
+// math.round(decimal): redondeo de un numero.
+
+//Math.pi:constante de clase con el numero pi
+
+
+------------------------------------------------
+
+para que la salida nos arroje un tipo indicado, existe la refundición. ejm:
+int raiz= (int)Math.round(num1);
+es forzar la salida a un entero, colocando entre parentesis (int)
+
+----------------------------------------------------
+
+CLASE STRING 
+algunos metodos:
+
+length(): devuelve la longitud de una cadena de caracteres
+
+charAt(n): deveulve la posicion de un caracter dentro de una cadena (empiza a contar de 0)
+
+substring(x,y): devuelve una subcadena dentro de la cadena, siendo x el caracter a partir del cuál se extrae e Y el numero de caracteres que se quieren extraer 
+
+equals(cadena): devuelve true si dos cadenas que se comparan son iguales y false si no lo son. distingue mayusculas y minusculas.
+
+equalsIgnoreCase(cadena): igual que equals pero sin tener en cuenta mayuscula y minuscula.
+
+---------------------------------------------------------
+
+*********************
+revisar para que solo me dé dos decimales.https://es.stackoverflow.com/questions/29408/como-limitar-la-cantidad-de-
+decimales-de-un-double
+
+---------------------------------
+         
