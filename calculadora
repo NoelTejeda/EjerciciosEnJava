@@ -1,7 +1,8 @@
 /*
-calculadora realizada con Netbeans
-con los jLabel1 mostramos un string por lo tanto para mostrar interos es necesario la transformacion a enteros con Integer.
+calculadora realizada en Netbeans
+realizada con Meaven
 
+siguiendo el video:
 https://www.youtube.com/watch?v=jp6el83TouY
  */
 package com.mycompany.calculadora;
@@ -277,7 +278,7 @@ public class Calculadora extends javax.swing.JFrame {
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         // TODO add your handling code here:
-        jLabel1.setText(jLabel1.getText()+"2");
+        jLabel1.setText(jLabel1.getText()+"2"); //con los jLabel1 mostramos un string por lo tanto para mostrar enteros es necesario la transformacion a enteros con Integer.
     }                                         
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
